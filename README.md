@@ -1,0 +1,2 @@
+# stronglooptest
+strongloop + travis testing
