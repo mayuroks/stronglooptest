@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-	"pretest": "slc start .",
+    "pretest": "slc start .",
     "test": "mocha server/tests/*",
-	"posttest": "slc ctl stop servicewow && slc ctl shutdown"
+    "posttest": "slc ctl stop servicewow && slc ctl shutdown"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -17,6 +17,7 @@
     "loopback-datasource-juggler": "^2.39.0",
     "mocha": "^2.3.3",
     "serve-favicon": "^2.0.1",
+    "strongloop": "^5.0.0",
     "superagent": "^1.4.0"
   },
   "optionalDependencies": {
