@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "test": "mocha server/tests/*"
+	"pretest": "slc start .",
+    "test": "mocha server/tests/*",
+	"posttest": "slc ctl stop servicewow && slc ctl shutdown"
   },
   "dependencies": {
     "compression": "^1.0.3",

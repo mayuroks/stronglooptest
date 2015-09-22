@@ -7,7 +7,7 @@ describe('/note', function() {
   var app;
 
   it('should return 200 status', function(done) {
-    superagent.get('http://localhost:3000/api/notes').end(function(err, res) {
+    superagent.get('http://localhost:3001/api/notes').end(function(err, res) {
       assert.ifError(err);
       assert.equal(res.status, status.OK);
       var results = JSON.parse(res.text);
